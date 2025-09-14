@@ -1,6 +1,12 @@
+![AntiPinterRef Banner](docs/banner.png)
+
 # ✨ AntiPinterRef
 
-[![Install Script](https://temp.co)
+<p align="center">
+  <a href="https://github.com/LycanLD/AntiPinterRef/raw/refs/heads/master/AntiPinterRef.user.js">
+    <img src="https://img.shields.io/badge/Install%20AntiPinterRef-brightgreen?style=for-the-badge&logo=greasemonkey&logoColor=white" alt="Install AntiPinterRef"/>
+  </a>
+</p>
 
 **AntiPinterRef** is a Tampermonkey/Violentmonkey userscript that prevents Pinterest’s annoying auto-refresh/reset “feature” by simulating user activity and blocking forced reload triggers.
 
@@ -8,21 +14,21 @@
 
 ## 🚀 Features
 
-- 🛑 Blocks Pinterest’s **auto-refresh banners** (no more “See new pins” popping up)
-- 🎭 Spoofs user activity (fake mouse moves, key presses, tiny scrolls)
-- 🔒 Prevents `location.reload()` hijacks and `onbeforeunload` nags
-- 🎨 Adds a sidebar **About button** with credits
-- ⚙️ Configurable via constants (interval, jitter, verbose logging)
+- 🛑 Blocks Pinterest’s **auto-refresh banners** (no more “See new pins” popping up)  
+- 🎭 Spoofs user activity (fake mouse moves, key presses, tiny scrolls)  
+- 🔒 Prevents `location.reload()` hijacks and `onbeforeunload` nags  
+- 🎨 Adds a sidebar **About button** with credits  
+- ⚙️ Configurable via constants (interval, jitter, verbose logging)  
 
 ---
 
 ## 📥 Installation
 
-1. Install a userscript manager:
-   - [Tampermonkey (Chrome/Edge/Firefox)](https://www.tampermonkey.net/)
-   - [Violentmonkey (Firefox/Chromium/Opera)](https://violentmonkey.github.io/)
-2. Click the green **Install AntiPinterRef** button above ⬆️
-3. Confirm the installation in your userscript manager.
+1. Install a userscript manager:  
+   - [Tampermonkey (Chrome/Edge/Firefox)](https://www.tampermonkey.net/)  
+   - [Violentmonkey (Firefox/Chromium/Opera)](https://violentmonkey.github.io/)  
+2. Click the **Install AntiPinterRef** button above ⬆️  
+3. Confirm the installation in your userscript manager.  
 
 ---
 
