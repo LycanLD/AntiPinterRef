@@ -16,7 +16,7 @@
 
 - 🛑 Blocks Pinterest’s **auto-refresh banners** (no more “See new pins” popping up)  
 - 🎭 Spoofs user activity (fake mouse moves, key presses, tiny scrolls)  
-- 🔒 Prevents `location.reload()` hijacks and `onbeforeunload` nags  
+- 🔒 Prevents `location.reload()` hijacks
 - 🎨 Adds a sidebar **About button** with credits  
 - ⚙️ Configurable via constants (interval, jitter, verbose logging)  
 
