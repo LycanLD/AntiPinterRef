@@ -70,7 +70,7 @@ When ready, commit and push — the raw GitHub URL can be used for installs.
 ## 🤝 Contributing
 
 Pull requests are welcome!
-If you find new Pinterest tricks that bypass the script, open an issue or PR.
+If you find new Pinterest tricks that the script can use, contact me!
 
 ---
 
