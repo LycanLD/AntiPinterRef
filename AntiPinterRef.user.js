@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AntiPinterRef
 // @namespace    https://lycanld.github.io
-// @version      1.0
+// @version      1.1
 // @description  Prevent Pinterest auto-refresh/reset by faking activity & blocking reload triggers
 // @author       LycanLD
 // @icon         https://github.com/LycanLD/AntiPinterRef/blob/master/docs/1024.png?raw=true
@@ -24,9 +24,6 @@
     if (CONFIG.verbose) console.log('[AntiPinterRef]', ...args);
   }
 
-// -------------------------------------------------------------------------
-// Branding / Credits Overlay
-// -------------------------------------------------------------------------
 function injectCredits() {
   if (document.getElementById('antipinterref-credits')) return;
 
@@ -131,30 +128,15 @@ function injectCredits() {
     btn.removeAttribute('href'); // in case we cloned an <a>
     btn.type = 'button';
 
-    // Replace the SVG inside
-    const svgWrapper = btn.querySelector('.SPw');
-    if (svgWrapper) {
-      svgWrapper.innerHTML = `
-        <svg
-          class="gUZ U9O Uvi"
-          height="24"
-          width="24"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M12 5.5c.69 0 1.25-.56 1.25-1.25V2.75c0-.41.34-.75.75-.75s.75.34.75.75v1.5c0
-                   1.52-1.23 2.75-2.75 2.75s-2.75-1.23-2.75-2.75V2.75c0-.41.34-.75.75-.75s.75.34.75.75v1.5c0
-                   .69.56 1.25 1.25 1.25zM6.47 4.47c.29.29.29.77 0 1.06L5.06 7.94c-.29.29-.77.29-1.06 0s-.29-.77
-                   0-1.06l1.41-1.41a.75.75 0 0 1 1.06 0zm11.06 0a.75.75 0 0 1 1.06 0l1.41 1.41c.29.29.29.77 0
-                   1.06s-.77.29-1.06 0L16.47 5.53a.75.75 0 0 1 0-1.06zM19.5 10H22c.41 0 .75.34.75.75s-.34.75-.75.75h-2.5c-.41
-                   0-.75-.34-.75-.75s.34-.75.75-.75zM2 11.5h2.5c.41 0 .75-.34.75-.75s-.34-.75-.75-.75H2c-.41
-                   0-.75.34-.75.75s.34.75.75.75zm17.03 5.47c-.29-.29-.29-.77 0-1.06l1.41-1.41c.29-.29.77-.29 1.06
-                   0s.29.77 0 1.06l-1.41 1.41a.75.75 0 0 1-1.06 0zM4.94 16.97a.75.75 0 0 1-1.06
-                   0L2.47 15.56c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l1.41 1.41c.29.29.29.77 0 1.06zM11.25
-                   18.25v1.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-1.5c0-1.52 1.23-2.75 2.75-2.75s2.75 1.23
-                   2.75 2.75v1.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-1.5c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25z"/>
-        </svg>
+    // Replace the icon with your PNG
+    const iconWrapper = btn.querySelector('.SPw');
+    if (iconWrapper) {
+      iconWrapper.innerHTML = `
+        <img
+          src="https://github.com/LycanLD/AntiPinterRef/blob/master/docs/1024.png?raw=true"
+          alt="AntiPinterRef"
+          style="width:24px;height:24px;object-fit:contain;"
+        />
       `;
     }
 
@@ -166,6 +148,7 @@ function injectCredits() {
 
     log('Sidebar button injected');
   }
+
 
   // Keep trying until sidebar loads
   const navInterval = setInterval(() => {
