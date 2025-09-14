@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Prevent Pinterest auto-refresh/reset by faking activity & blocking reload triggers
 // @author       LycanLD
-// @icon         https://github.com/LycanLD/LeUnBrIck/tree/main/docs/1024.png
+// @icon         https://github.com/LycanLD/AntiPinterRef/blob/master/docs/1024.png?raw=true
 // @match        *://*.pinterest.com/*
 // @grant        none
 // @run-at       document-end
