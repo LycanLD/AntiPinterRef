@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AntiPinterRef
 // @namespace    https://lycanld.github.io
-// @version      1.1
+// @version      1.0.1
 // @description  Prevent Pinterest auto-refresh/reset by faking activity & blocking reload triggers
 // @author       LycanLD
 // @icon         https://github.com/LycanLD/AntiPinterRef/blob/master/docs/1024.png?raw=true
